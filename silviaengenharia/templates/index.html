@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'imagens/icons8-engenheiro-50.ico' %}"/>
+    <a href="https://icons8.com/icon/56202/engenheiro"></a> <!-- link para os criadores do favicon-->
+    <!-- Importando Bootstrap através de CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4adb802f2c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}"/>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <title>Curso de Engenharia Revit</title>
+</head>
+<body>
+    
+    
+
+        <!-- Criando primeira sessão da página -->
+        <p class="fundo">REVIT</p>
+        <div class="row">
+
+            <!--Inserindo video de Background-->
+            <video autoplay muted loop id="myVideo">
+                <source src="{% static 'videos/background.mp4' %}" type="video/mp4">
+            </video>
+            
+
+            <!-- Inserindo conteúdo da sessão -->
+            <div class="container-fluid">
+
+                <h1>Silvia Torres Engenheira Civil</h1>
+                <p class="video-text ">O curso <span class="font-italic"><u>Projetando com Maestria</u></span> com <b>CENTENAS</b>  de aulas, para te ajudar a projetar <b>COM AGILIDADE</b> e <b>QUALIDADE</b>,mesmo que você não tenha nenhuma noção de como iniciar um projeto.</p>
+                <div class="row">
+                    <div class="container-fluid">
+                        <p class="video-text titulo"> <u>Assista ao video abaixo</u></p>
+                        <video  class="video_apr" controls>
+                            <source src="{{ Pagina.video_apresentacao.url }}" type="video/mp4" >
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Criando segunda sessão da página -->
+        <div class="container-fluid borda">
+
+            <div class="row">
+                
+                <div class="col-md-12"><p class="display-3 nome-2">Silvia Torres Engenheira Civil</p></div>
+            </div>
+
+            <div class="row fundo-preto">
+                
+                <div class="col-md-4 centralizado">
+                    <p class="display-3 riscado">De R${{ Pagina.preco_antigo }}</p>
+                    <p class="display-4">Por Apenas</p>
+                    <h2 class="display-3 verde">R$ {{ Pagina.preco_novo }}</h2>
+                    <a href="https://pay.hotmart.com/E41463153K?off=3kdob4yl"><button class="botao  texto-botao">QUERO APRENDER REVIT</button></a>
+                    <p style="font-size: 25px;">Clique no botão acima, adquira seu curso e receba agora mesmo em seu e-mail.</p>
+                </div>
+            
+                <div class="col-md-8">
+                    <p class="revit-2">REVIT</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Criando terceira sessão da página -->
+        <div class="row borda">
+
+            <div class="col-md-12">
+                <h3 class="float-left titulo-sessao">TENHO CERTEZA QUE ESSE CURSO VAI TE AJUDAR</h3>
+            </div>
+
+            <div class="col-md-12">
+                <p class="sub-h">Veja as principais dificuldades de quem quer progredir na carreira,
+                     se tornar um profissional com conhecimento e viver da engenharia.</p>
+            </div>
+
+            <div class="col-md-4 centralizado">
+                <img class="img-sessao img-thumbnail" src="{% static 'imagens/foto-2.png' %}" alt="imagem de varias paginas de um site">
+                <p class="texto-sessao"><b>Começa assistir vídeo no youtube.</b> Quando pensa em aprender verdadeiramente a projetar, começa assistindo vídeos aleatórios no youtube, fica muito confuso porque não entende alguns processos. E é claro, isso é perfeitamente normal logo que esses conteúdos não são criados sistematicamente, ou seja, com começo, meio e fim. Não é um passo a passo. </p>
+            </div>
+            <div class="col-md-4 centralizado">
+                <img class="img-sessao img-thumbnail" src="{% static 'imagens/foto-1.jpg' %}" alt="imagem de uma pessoa na frente de notbook">
+                <p class="texto-sessao"><b>A forma como se prepara o software para trabalhar.</b> A maioria das pessoas não sabem como utilizar as técnicas  e ferramentas adequadas do software revit para ganhar  agilidade e qualidade, principalmente  na produção dos projetos. Também não conhecem muitos outros segredos que são capazes de fazer com que engenheiros fiquem realmente aptos a competir no mercado de trabalho.</p>
+            </div>
+            <div class="col-md-4 centralizado">
+                <img class="img-sessao img-thumbnail" src="{% static 'imagens/foto-3.png' %}" alt="imagem de uma lampada">
+                <p class="texto-sessao"><b>Dificuldade das pessoas que querem mudar sua carreira rápido e facilmente e não sabem como.</b> Qual o caminho para se tornar um profissional com novas visões e habilidades?  Como conquistar e influenciar clientes?</p>
+            </div>
+
+            <hr>
+        </div>
+
+        <!-- Criando a Quarta sesão da página -->
+        <div class="row borda">
+            
+            <div class="col-md-6" >
+                <h4>O Curso projetando com Maestria vai te ajudar com todas essas questões:</h4>
+                <p class="texto-sessao">Eu garanto que você irá desfrutar dos resultados que esse curso pode te trazer. Acredite, projetar não precisa estar limitado a trabalhar em AutoCad ou fazer planta 2D e depois utilizar outro software para fazer o 3D. Você é capaz de imaginar que pode  fazer projetos de prefeitura,  executivo, estrutural  e 3D com qualidade no Revit? Acredite, você poderá fazer tudo isso! </p>
+                <br/>
+
+                <p class="texto-sessao">E como isso é possível? Com técnicas para aumentar sua capacidade profissional, elevando seu nível de conhecimento prático. Que consequentemente será reconhecido por seus trabalhos espalhados pela cidade e região. E é claro,  sendo bem remunerado.</p>
+                <br/>
+
+                <p class="texto-sessao">E o que acredito ser incrível nesse curso, não é um simples curso de Revit com informações soltas que depois você não sabe como organizar e aplicar. Eu organizei mais de 70 aulas no módulo básico- 70 aulas no módulo avançado- e mais de 50 aulas no módulo hidrossanitario - que você irá descobrir que um profissional capacitado pode ganhar muito mais por isso.</p>
+                <br/>
+
+                <p class="texto-sessao">Tenho certeza que esse curso vai mudar a ideia que você tinha sobre projetar com eficiência, vai fazer com que definitivamente, compreenda que é possível fazer projetos incríveis sem sofrimento.</p>
+            </div>
+
+            
+            <img class="img-especial" src="{% static 'imagens/imagem-1.png' %}" alt="foto da silvia">
+
+
+        </div>
+
+        <!-- Criando quinta sessao da página -->
+        <div class="row borda">
+
+            <div class="col-md-6">
+                <h5 class="titulo-sessao-6">O que você vai aprender nesse treinamento?</h5>
+                <p class="texto-sessao"><i class="fas fa-chevron-right"></i><b>Módulo 1 Revit Básico.</b> Que você aprenderá projetar um prédio de 8 andares + finalizar prancha para Projeto de prefeitura. </p>
+                <p class="texto-sessao"><i class="fas fa-chevron-right"></i><b>Módulo 2 Revit Avançado.</b> Aprenderá atalhos e modelos de casas mais refinadas. </p>
+                <p class="texto-sessao"><i class="fas fa-chevron-right"></i><b>Módulo 3 Revit Hidrossanitário.</b> Projeto de água fria, esgoto e água pluvial de um edifício de 8 pavimentos.</p>
+                <p class="texto-sessao"><i class="fas fa-chevron-right"></i><b>Mentoria personalizada</b> diretamente comigo para te ajudar com os primeiros orçamentos e inicio de criações de projetos no Revit.  </p>
+                <p class="texto-sessao"><i class="fas fa-chevron-right"></i><b>E o melhor de tudo:</b> você receberá todas as atualizações do curso enquanto estiver disponível</p>
+                <p class="texto-sessao central"><b>Aperte o botão abaixo e adquira agora o seu curso <u>Projetando com Maestria no Revit.</u></b></p>
+                <a href="https://pay.hotmart.com/E41463153K?off=3kdob4yl"><button class="botao">QUERO MEU CURSO</button></a>
+            </div>
+
+                <img class="img" src="{% static 'imagens/imagem-2.png' %}" alt="foto da silvia">
+
+        </div>
+
+        <!-- Criando sexta sessao da página -->
+        <div class="row borda">
+
+            <div class="col-md-12">
+                <p class="titulo-sessao-6">Qual o principal benefício deste curso?</p>
+                <p class="texto-sessao-6">O principal benefício deste curso é você se capacitar e ganhar mais por isso. Terá acesso a conhecimentos que te darão produtividade e competitividade. Já pensou em ser um profissional que sabe trabalhar com uma ferramenta pouco explorada no mercado ainda? Agora é possível!</p>
+            </div>
+            <div class="col-md-12">
+                <p class="titulo-sessao-6">Vou conseguir fazer as aulas?</p>
+                <p class="texto-sessao-6">Um dos pilares desse curso é ter sido idealizado utilizando  uma linguagem simples, sem custo para instalar o software e fácil  de ser encontrado. Nada de pagar por licenças caras ou  fora do seu orçamento, que impossibilitam a execução das aulas. Também foi pensado para facilitar a vida de quem vai executar os projetos. Aulas  rápidas  utilizando técnicas de simples que qualquer pessoa será capaz de executar.</p>
+            </div>
+            <div class="col-md-12">
+                <p class="titulo-sessao-6">Qual o diferencial do Curso Projetando com Maestria?</p>
+                <p class="texto-sessao-6">O que diferencia esse curso de Revit de qualquer outro existente, é que ele não é um simples curso de Software, que depois as pessoas não sabem como organizar  e aplicar o que aprendeu. São mais de 130 aulas organizadas (Revit Básico, Revit Avançado, Revit Hidrossanitário) em que você terá desde o projeto mais simples a projetos de edifícios de 8 pavimentos.Aulas que foram organizadas por engenheira civil atuante no mercado, o que significa que está organizadas do ponto de vista profissional, havendo equilíbrio entre teoria e prática</p>
+            </div>
+            
+        </div>
+
+        <!-- Criando sétima sessao da página -->
+        <div class="row borda">
+
+
+            <img class="img-especial-3" src="{% static 'imagens/imagem-3.png' %}" alt="foto da silvia">
+
+            <div class="col-md-6">
+                <h6 class="titulo-sessao-6">Agora, você tem 2 caminhos...</h6>
+                <p class="sub-h caminho">CAMINHO 1</p>
+                <p class="sub-h-7">Continuar tentando se tornar um profissional de verdade e viver se capacitando  de conteúdos aleatórios na internet. É muito difícil viver de aulas desconexas, sem um mentor, que não lhe tira as suas dúvidas. Isso logo te fará desistir e voltar a estagnar na carreira.</p>
+                <p class="sub-h caminho">CAMINHO 2</p>
+                <p class="sub-h-7">Ou investir no Curso Projetando com maestria hoje, seguir as aulas e nas próximas semanas e, dentro de pouco tempo, já sentir melhora na sua qualidade de fazer projetos. Você terá um guia completo, em suas mãos, para nunca mais cair na tentação de passar a semana procurando se capacitar sem sucesso e nada de resultado. </p>
+            </div>
+
+        </div>
+
+        <!--Criando sessão 8-->
+        <div class="row">
+
+            <div class="col-md-12 centralizado" >
+                <a href="https://pay.hotmart.com/E41463153K?off=3kdob4yl"><button class="botao  texto-botao">QUERO MEU CURSO</button><br></a>
+                <p >CLIQUE E COMPRE COM DESCONTO PARA RECEBER AGORA EM SEU E-MAIL</p>
+            </div>
+
+        </div>
+
+        <!-- Criando sessão 9 da página -->
+        <div class="row borda">
+            <div class="col-md-6">
+                <img class="img-especial-4" src="{% static 'imagens/imagem-4.png' %}" alt="foto da silvia">
+            </div>
+            <div class="col-md-6 centralizado">
+                <button href="" class="button-insta"><i class="fab fa-instagram"></i> NO INSTAGRAM</button>
+                <p class="display-2"><b>Silvia Torres</b></p>
+                <p class="display-4">Engenheira Civil e Professora da Rede Pública</p>
+                <p class="texto-sessao">Uma apaixonada por ajudar PESSOAS a SEREM MAIS PROFISSIONAIS, CONQUISTANDO SEGURANÇA E FELICIDADE.</p>
+                <p class="texto-sessao">Engenheira Civil e Pós graduada em Ensino Superior. Concursada como professora na rede pública de Guaramirim- SC. Também proprietária da STEC Engenharia.</p>
+                <p class="texto-sessao">Com o propósito de ajudar pessoas a se capacitarem , criou o Curso projetando com Maestria , hoje reconhecido por seus alunos pela simplicidade na metodologia e capacidade de gerar resultados duradouros.</p>
+            </div>
+            
+        </div>
+
+        <!--Criando sessão 10 da página -->
+        <div class="row">
+
+            <div class="col-md-12" >
+                <p class="titulo-sessao center">Confira os depoimentos de quem já conhece e aprova o curso</p>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="titulo-sessao-6" >{{ Pagina.titulo_video_1 }}</p>
+                    <video class="sessao-videos relativo" controls="controls">
+                        <source src="{{ Pagina.video_depoimento_1.url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="col-md-6">
+                    <p class="titulo-sessao-6" >{{ Pagina.titulo_video_2 }}</p>
+                    <video class="sessao-videos relativo" controls="controls">
+                        <source src="{{ Pagina.video_depoimento_2.url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+            <div class="row borda">
+                <div class="col-md-6">
+                    <p class="titulo-sessao-6" >{{ Pagina.titulo_video_3 }}</p>
+                    <video class="sessao-videos relativo" controls="controls">
+                        <source src="{{ Pagina.video_depoimento_3.url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="col-md-6">
+                    <p class="titulo-sessao-6">{{ Pagina.titulo_video_4 }}</p>
+                    <video class="sessao-videos relativo" controls="controls">
+                        <source src="{{ Pagina.video_depoimento_4.url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Criando sessao 11 da pagina -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <p class="titulo-sessao-6">Cadastre-se para receber notícias e atualizações sobre o curso!</p>
+                <div class="formulario">
+                    <form action="agradecimento" method="POST">
+                    <div class="form-group">
+                        {% csrf_token %}
+                        Nome:<br>
+                        {{ form.nome }}<br>
+                        Email:<br>
+                        {{ form.email }}
+                    </div>
+                    <button type="submit" class="btn btn-danger">CADASTRAR</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+                <p class="titulo-sessao-6">Ou clique no botão abaixo e fale conosco pelo WhatsApp</p>
+                <a class="whatsapp-link" href="https://wa.me/5547989004599" target="_blank">
+                    <button class="btn btn-success">Fale comigo!</button>
+                </a>
+            </div>
+
+        </div>
+
+        <footer class="row rodapé">
+
+        </footer>
+</body>
+</html>

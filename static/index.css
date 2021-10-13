@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*estilos para página toda*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.row{
+    margin: 40px auto;
+}
+.img{
+    display: block;
+    width: 30%;
+    height: 100vh;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: auto;
+}
+.img-especial{
+    display: block;
+    width: auto;
+    height: 100vh;
+    margin-top: auto;
+    margin-left:auto;
+}
+.img-especial-2{
+    width: auto;
+    height: 110vh;
+    margin-right:auto;
+}
+.img-especial-3{
+    margin-top: auto;
+    width: 20%;
+    height: auto;
+    margin-right:auto;
+    margin-left: auto;
+    border-bottom: 5px solid gray;
+    border-radius: 20%
+}
+.img-especial-4{
+    width: auto;
+    height: 100vh
+}
+.img-sessao{
+    width: 250px;
+    height: 200px;
+    margin: 30px auto;
+}
+@media(max-width: 500px){
+    .img{
+        width: 80%;
+        height: 60vh;
+    }
+    .img-especial{
+        width: 60%;
+        height: 70vh;
+        margin-left:auto;
+    }
+    .img-especial-2{
+        width: 60%;
+        height: 70vh;
+        margin-right:auto;
+    }
+    .img-especial-3{
+        width: 60%;
+        height: 70vh;
+        margin-right:auto;
+        margin-top: 0px;
+    }
+    .img-especial-4{
+        height: 80vh;
+        margin-bottom: 30px;
+        width: auto
+    }
+}
+/*estilizando primeira sessão*/
+.fundo{
+    font-size: 30vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: white;
+    font-family: 'Rampart One', cursive;
+    opacity: .6;
+}
+h1{
+    padding: 15px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 8rem;
+    text-shadow: 1px 0 0 white;
+    margin-bottom: 0
+}
+.video-text{
+    font-size: 30px;
+    text-align: center;
+}
+.titulo{
+    margin-top: 20px;
+}
+#video{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    box-shadow: 4px 4px 4px gray;
+    align-items: center;
+    margin-bottom: 60px;
+    border-radius: 5px;
+}
+@media (max-width: 600px){
+    h1{
+        font-size: 3.5rem
+    }
+    .video-text{
+        font-size: 20px
+    }
+    #video{
+        height: 250px
+    }
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    opacity: .4;
+}
+
+/*estilizando segunda sessão*/
+.fundo-branco{
+    background-color: rgba(255, 255,255,0.4);
+    border-radius: 20px
+    
+}
+.revit{
+    font-size: 80px;
+    color: black;
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    opacity: .5;
+}
+.nome-2{
+    font-family: 'Alex Brush', cursive;
+    text-align: center
+}
+.fundo-preto{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 100px
+}
+.riscado{
+    text-decoration: line-through red;
+}
+.verde{
+    color: rgb(2, 252, 2)
+}
+.centralizado{
+    text-align: center;
+    align-items: center;
+}
+.texto-botao{
+    border-radius:20%;
+    color: red;
+    padding: 30px 10px;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.revit-2{
+    font-size: 20vw;
+    color: white;
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    opacity: .5;
+}
+
+/*estilizando terceira sessão*/
+.titulo-sessao{
+    font-size: 4vw;
+    color: rgb(243, 29, 29);
+    text-align: center;
+    text-shadow: 0px 5px 5px gray;
+    display: inline-block;
+    max-width:800px;
+}
+.sub-h{
+    margin-top: 20px;
+    font-size: 2.5vw;
+    color:black;
+    text-align: justify;
+    text-shadow: 0px 3px 3px gray;
+    display: inline-block;
+    max-width:800px;
+}
+.col-md-4{
+    align-items:center;
+}
+.tenor-gif-embed{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.texto-sessao{
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px auto;
+}
+h4{
+    margin: 40px 0;
+    font-size: 3vw;
+    color: rgb(243, 29, 29);
+    text-align: justify;
+    text-shadow: 0px 5px 5px gray;
+    display: inline-block;
+    max-width:800px;
+}
+.central{
+    margin-top:  100px;
+}
+.botao{
+    padding: 20px 10px;
+    margin: 10px;
+    border: solid 1px white;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    transition-duration: .5s;
+    font-size: 35px;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 6px 20px red;
+}
+.titulo-sessao-6{
+    text-align: center;
+    color: rgb(243, 29, 29);
+    text-shadow: 0px 5px 5px gray; 
+    font-size: 2.5vw;
+    margin: 30px auto
+}
+.texto-sessao-6{
+    text-align: center;
+    font-size: 2vw;
+    margin: 30px auto
+}
+.caminho{
+    background-color: rgba(243, 29, 29, 0.9);
+}
+.sub-h-7{
+    margin-top: 20px;
+    font-size: 2vw;
+    color:black;
+    text-align: justify;
+    text-shadow: 0px 3px 3px gray;
+    display: inline-block;
+    max-width:800px;
+}
+.button-insta{
+    font-size: 4vw;
+    padding: 20px;
+    background-color: rgb(250, 50, 50);
+    color: white;
+    border-radius: 5px;
+    
+}
+@media(max-width: 500px){
+    .titulo-sessao{
+        font-size: 40px;
+    }
+    .sub-h{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 35px
+    }
+    .titulo-sessao-6{
+        font-size: 30px;
+    }
+    .texto-sessao-6{
+        font-size: 23px
+    }
+    .sub-h-7{
+        font-size: 25px;
+    }
+}
+
+/*estilizando sessao 10*/
+.sessao-videos{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.formulario{
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto
+}
+.btn-success{
+    display: block;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px
+}
+.btn-success:hover{
+    box-shadow: 1px 1px 15px green
+}
+.rodapé{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    margin: 0px
+}
+.borda{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid black;
+}
+input{
+    width: 300px;
+    height: 30px;
+}
+.video_apr{
+    width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+@media(max-width: 800px){
+    .video_apr{
+        width: 300px;
+        height: auto
+    }
+}

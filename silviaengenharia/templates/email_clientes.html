@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'imagens/icons8-engenheiro-50.ico' %}"/>
+    <a href="https://icons8.com/icon/56202/engenheiro"></a> <!-- link para os criadores do favicon-->
+    <!-- Importando Bootstrap através de CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4adb802f2c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}"/>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <title>Curso de Engenharia Revit</title>
+</head>
+<body>
+    
+    
+
+        <!-- Criando primeira sessão da página -->
+        <p class="fundo">REVIT</p>
+        <div class="row">
+
+            <!--Inserindo video de Background-->
+            <video autoplay muted loop id="myVideo">
+                <source src="{% static 'videos/background.mp4' %}" type="video/mp4">
+            </video>
+            
+
+            <!-- Inserindo conteúdo da sessão -->
+            <div class="container-fluid">
+
+                <h1>Silvia Torres Engenheira Civil</h1>
+
+                <h2>Enviar Emails para todos os clientes:</h2>
+                    {% if messages %}
+                        {%for message in messages %}
+                            <div class="alert {{ message.tags }}">
+                              {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                <form action="email_clientes" method="post">
+                    {% csrf_token %}
+                    <input type="text" placeholder="Assunto do e-mail" name="assunto" id="assunto"><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </div>
+
+        </div>
+
+
+</body>
+</html>
